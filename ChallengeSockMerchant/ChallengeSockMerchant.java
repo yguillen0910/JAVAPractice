@@ -12,13 +12,11 @@ public class ChallengeSockMerchant {
     static int sockMerchant(int n, int[] ar) {
 
         Integer[] a = new Integer[ar.length];
-
         for(int ctr = 0; ctr < ar.length; ctr++) {
             a[ctr] = Integer.valueOf(ar[ctr]); 
         }
 
         ArrayList<Integer> diffNum = new ArrayList<>();
-
         for(int i=0; i<ar.length; i++){
             if(!diffNum.contains(a[i])){
                 diffNum.add(a[i]);
